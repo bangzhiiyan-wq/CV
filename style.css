@@ -35,7 +35,6 @@ body {
     0px 8px 16px rgba(96, 97, 112, 0.16);
 }
 
-/********************* Top Content  *********************/
 .resume-card .resume-top-content {
   position: absolute;
   width: 55em;
@@ -54,11 +53,11 @@ h2 {
 }
 
 .resume-top-content h1 {
-  padding-top: 75px;
-  letter-spacing: 2px;
+  padding-top: 65px;
+  letter-spacing: 1px;
   color: #222222;
-  font-size: 45px;
-  font-weight: 500;
+  font-size: 40px; /* Diubah dari 45px menjadi 32px agar lebih pas dan tidak terlalu besar */
+  font-weight: 600;
 }
 
 .resume-top-content h2 {
@@ -66,7 +65,6 @@ h2 {
   font-weight: 400;
 }
 
-/********************* Left Content  *********************/
 .resume-card .resume-left-content {
   position: absolute;
   left: 15px;
@@ -177,7 +175,6 @@ h2 {
   transition: all 0.3s ease 0s;
 }
 
-/********************* Right Content  *********************/
 .resume-card .resume-right-content {
   margin-left: 22em;
   margin-top: 12em;
@@ -329,15 +326,54 @@ h2 {
     background-color: #3a3b3f;
 }
 .resume-projects .details ul li a {
-    color: #ffffff !important; /* Memaksa warna link proyek menjadi putih */
+    color: #ffffff !important;
 }
 
 .resume-projects .details ul li a:hover {
-    color: var(--dark-sandal) !important; /* Warna saat kursor diarahkan ke link */
+    color: var(--dark-sandal) !important;
 }
 .resume-card .resume-right-content i {
     color: #ffffff !important;
 }
 .resume-contact ul li .fa-github {
+    color: #ffffff !important;
+}
+body.light-mode .resume-card {
+    background-color: #ffffff !important;
+    
+}
+
+body.light-mode .resume-card .resume-top-content {
+    background-color: #ddd0d1 !important;
+}
+
+body.light-mode .resume-card .resume-top-content h1 {
+    color: #222222 !important;
+}
+
+body.light-mode .resume-card .resume-top-content h2,
+body.light-mode .resume-card .resume-right-content,
+body.light-mode .resume-card .resume-right-content * {
+    color: #222222 !important;
+}
+
+body.light-mode .resume-card .resume-right-content i,
+body.light-mode .resume-card .resume-content .heading i {
+    color: #b39e9f !important;
+}
+
+body.light-mode .resume-projects .details ul li a {
+    color: #222222 !important;
+}
+
+body.light-mode .resume-contact ul li .fa-github {
+    color: #000000 !important;
+}
+
+body.light-mode .resume-card .resume-hobbies button {
+    background-color: #f1f1f1 !important;
+    color: #222222 !important;
+}
+body.light-mode .resume-contact ul li .fa-github {
     color: #ffffff !important;
 }
