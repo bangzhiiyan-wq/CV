@@ -309,3 +309,35 @@ h2 {
     font-size: 14px !important;
     white-space: nowrap !important;
 }
+:root {
+    --light-sandal: #3b2a2c;
+    --dark-sandal: #5a4547;
+}
+
+.resume-card {
+    background-color: #1b1c1f;
+}
+
+.resume-card .resume-top-content,
+.resume-card .resume-top-content *,
+.resume-card .resume-right-content,
+.resume-card .resume-right-content * {
+    color: #ffffff;
+}
+
+.resume-card .resume-hobbies button {
+    background-color: #3a3b3f;
+}
+.resume-projects .details ul li a {
+    color: #ffffff !important; /* Memaksa warna link proyek menjadi putih */
+}
+
+.resume-projects .details ul li a:hover {
+    color: var(--dark-sandal) !important; /* Warna saat kursor diarahkan ke link */
+}
+.resume-card .resume-right-content i {
+    color: #ffffff !important;
+}
+.resume-contact ul li .fa-github {
+    color: #ffffff !important;
+}
