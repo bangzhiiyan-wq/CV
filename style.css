@@ -377,3 +377,23 @@ body.light-mode .resume-card .resume-hobbies button {
 body.light-mode .resume-contact ul li .fa-github {
     color: #ffffff !important;
 }
+/* Warna link saat kursor diarahkan (mode gelap) */
+.resume-card a:hover {
+    color: #b39e9f !important;
+}
+/* Animasi link saat kursor diarahkan */
+.resume-card a {
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    transition: background-size 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-card a:hover {
+    color: #d9776f !important;
+    background-size: 100% 2px;
+    transform: translateX(4px);
+}
